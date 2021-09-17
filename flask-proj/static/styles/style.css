@@ -1,0 +1,15 @@
+*{
+  font-family: "Comic Sans MS", "Comic Sans", "cursive";
+}
+#div-1{
+  background-color: yellow;
+  height: 50px;
+}
+#div-2{
+  background-color: green;
+  height: 50px;
+}
+img{
+  width: 100px;
+  height: auto;
+}
