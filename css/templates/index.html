@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Princely Pastries</title>
+
+
+  <!-- CSS Fonts from Google -->
+  <!-- https://fonts.google.com/specimen/Koh+Santepheap?preview.text=Princely%20Pastries&preview.text_type=custom -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap" rel="stylesheet">
+
+  <!-- Was having problems conneting css to html, used this stack overflow post: https://stackoverflow.com/questions/22259847/application-not-picking-up-css-file-flask-python -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/style.css') }}">
+
+  <!-- Bootstrap links: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <nav class="navbar navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand nav-text" href="#">Princely Pastries</a>
+      </div>
+    </nav>
+
+
+
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Code from bootstrap example: https://getbootstrap.com/docs/4.3/components/carousel/ -->
+
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./static/init-slider-imgs/bakery-action.jpeg" class="d-block w-100" alt="fernand pressing dough">
+          </div>
+          <div class="carousel-item">
+            <img src="./static/init-slider-imgs/pastries-1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./static/init-slider-imgs/pastries-2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./static/init-slider-imgs/couple-together.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div id="body-header-wrapper">
+        <h2 id="body-header">Welcome to <a href="https://www.fantasynamegenerators.com/french_names.php">Fernand Grandis's</a> Bakery!</h2>
+        <h3 id="body-subheader">In continuous operation since 1452</h3>
+
+      </div>
+    <p>
+      Fernand has been running Princely Pastries for 26 years! Since he was 21 years old.
+      His father gave him the business after retiring, as did his father from him. His family has run this bakery for 600 years!
+      (Fun Fernand Fact: Fernand <a href="https://open.spotify.com/artist/5VsnoC7iiNOXsXIogSjO3H?si=4zYEk2YDRommdekqRe4JpA&dl_branch=1">attempted</a> to make it in the music business before returning back to work for his father!)
+    </p>
+    <p>Our bakery makes:</p>
+    <ul>
+      <li>Fresh bread</li>
+      <li>Cookies & Cakes</li>
+      <li>Croissants</li>
+      <li>Macaroons</li>
+      <li>Crepes</li>
+    </ul>
+
+    <p>Our bakery serves:</p>
+
+    <ol>
+      <li>nice customers</li>
+      <li>polite customers</li>
+      <li>customers who don't know what they want</li>
+      <li>customers with ear infections</li>
+      <li>rude customers</li>
+      <li>customers seeking vengance for previous wrongdoings</li>
+      <li>mean customers</li>
+    </ol>
+    <hr>
+
+    <h2>Owners of Princely Pastries</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Years</th>
+        </tr>
+        <!-- <tr> -->
+    <tr>
+      <td>Patrice Grandis</td>
+      <td>1452-1473</td>
+    </tr>
+    <tr>
+      <td>Isaïe Grandis</td>
+      <td>1473-1504</td>
+    </tr>
+    <tr>
+      <td>Jean-Jacques Grandis</td>
+      <td>1504-1504</td>
+    </tr>
+    <tr>
+      <td>Brice Grandis</td>
+      <td>1504-1532</td>
+    </tr>
+    <tr>
+      <td>Raphaël Grandis</td>
+      <td>1504-1532</td>
+
+    </tr>
+    <tr>
+      <td>Jean-Louis Grandis</td>
+      <td>1532-1590</td>
+
+    </tr>
+    <tr>
+      <td>Florent Grandis</td>
+      <td>1590-1643</td>
+
+    </tr>
+    <tr>
+      <td>Lucas Grandis</td>
+      <td>1643-1710</td>
+
+    </tr>
+    <tr>
+      <td>Dominique Grandis</td>
+      <td>1710-1995 (he lived long!)</td>
+    </tr>
+    <tr>
+      <td>Fernand Grandis</td>
+      <td>1995-2021</td>
+    </tr>
+
+
+
+      </table>
+    <p>Fun Fernand Fact: Fernand's favorite pastry is orange macaroons</p>
+    <hr>
+    <div>
+      <h2>Watch Fernand in action!</h2>
+      <video width="320" height="auto" autoplay muted>
+        <source src="./static/fernand-big-man.webm" type="video/webm">
+        </video>
+      <p>Fun Fernand Fact: Fernand could press dough at 6 months old!</p>
+    </div>
+  </div>
+
+
+</body>
+</html>
