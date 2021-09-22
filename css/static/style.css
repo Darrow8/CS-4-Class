@@ -71,17 +71,11 @@ h2:not(#body-header){
 }
 
 /* 10 */
-
-body {
-  /* background-color: var(--light-background) !important; */
-}
-
-/* 11 */
 nav{
   background-color: var(--main-header);
 }
 
-/* 12 */
+/* 11 */
 .nav-text{
   color: white !important;
 }
