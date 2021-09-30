@@ -1,0 +1,33 @@
+#!/bin/bash
+# written by Darrow Hartman Sep 30 2021
+
+read -p "Enter project name: " project
+
+#making project
+
+mkdir "$project"
+cd "$project"
+mkdir "templates"
+
+# new files
+
+touch "app.py"
+touch "runflask.bat"
+cd "templates"
+touch "index.html"
+
+# add code
+
+printf "<p>code running on "$project"!</p>" >> index.html
+cd ..
+printf "export FLASK_APP=app.py && export FLASK_ENV=development \n flask run" >> runflask.bat
+printf "from flask import Flask, render_template \napp = Flask(__name__) #this has 2 underscores on each side \n \n@app.route('/') \ndef hello_world(): \n\treturn render_template('index.html') \n " >> app.py
+
+# init server
+
+chmod 777 runflask.bat
+
+echo "fully completed, happy coding"
+echo "link: http://127.0.0.1:5000/"
+
+./runflask.bat

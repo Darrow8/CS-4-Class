@@ -2,9 +2,16 @@
 
 For anyone seeing this online, this is my personal repo for my CS 4 class at Lakeside. Feel free to look around, but please don't edit stuff.
 
-Everything should be in http://www.2122.lakeside-cs.org/DarrowHartman/<file-name>, unless Miss. O'Neal has removed it. 
+Everything should be in http://www.2122.lakeside-cs.org/DarrowHartman/<file-name>, unless Miss. O'Neal has removed it.
 
-# Setting up file
+# Setting up file (Automatic)
+
+(only works on mac)
+Setup file by: `chmod 700 init-project`
+And then: `./init-project`
+
+
+# Setting up file (Manual)
 
 1. Make a new file in repo
 2. Run `touch runflask.bat`
