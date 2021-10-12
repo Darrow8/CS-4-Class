@@ -1,0 +1,49 @@
+
+{% extends 'base.html.j2' %}
+{% block head %}
+<link rel="stylesheet" href="../static/style.css">
+{% endblock %}
+{% block title %}
+Super Secret Login
+{% endblock %}
+
+{% block body %}
+<!-- PSST:  Don't insult the form!-->
+<!-- Code for the navbar modified from the example on bootstrap: https://getbootstrap.com/docs/4.1/components/navbar/ -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="">Super Secret Login</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+</nav>
+
+
+<div class="main-form card">
+  <form method="POST" action="results">
+    <div class="card-body">
+      <div class="form-group">
+        <p>What is your full name:</p>
+        <input class="form-control w-50" type="text" name="name" value="" required /> <br>
+      </div>
+      <div class="form-group">
+        <p>Is this form secret:</p>
+        <input  type="radio" name="is_secret" value="yes" required /> Secret
+        <input type="radio" name="is_secret" value="no" required /> Not Secret
+      </div>
+      <div class="form-group">
+        <label for="formControlRange">How cool is this form:</label>
+        <input type="range" class="form-control-range" id="formControlRange">
+      </div>
+      <div class="form-group">
+        <label for="formControlRange">What is your favorite website:</label>
+        <input class="form-control" type="url" name="myURL" id="myURL" value="http://www.google.com" required>
+      </div>
+      <br>
+      <input type="submit" class="btn btn-primary" value="Submit" />
+    </div>
+  </form>
+</div>
+
+{% endblock %}
