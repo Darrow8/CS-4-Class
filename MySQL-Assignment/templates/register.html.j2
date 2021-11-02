@@ -1,0 +1,71 @@
+
+{% extends 'base.html.j2' %}
+{% block head %}
+
+<link rel='stylesheet' href='../static/auth.css' ></link>
+
+
+{% endblock %}
+
+{% block title %}
+Signup
+{% endblock %}
+
+{% block body %}
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Super Awesome Network</span>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/signup">Signup</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container ">
+
+  <div class="d-flex justify-content-md-center">
+    <div class="card login-card">
+      <div class="card-body">
+        <h5 class="card-title">Signup to Super Awesome Network</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Enter your email and password to connect</h6>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" >
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" >
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Favorite pizza topping</label>
+            <input type="text" class="form-control" id="pizza-topping" >
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="pass">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Repeat Password</label>
+            <input type="password" class="form-control" id="r-pass">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <a class="card-link" href="/">Login instead</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
